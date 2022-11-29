@@ -1,5 +1,5 @@
 
-class CardScanner {
+export class CardScanner {
     constructor(cardReadStatus, cradInsertStatus, cardEjectStatus) {
         this.cardReadStatus = cardReadStatus;
         this.cardInsertStatus = cradInsertStatus;
@@ -10,7 +10,7 @@ class CardScanner {
     }
 }
 
-class Keypad {
+export class Keypad {
     constructor(keypadStatus) {
         this.keypadStatus = keypadStatus;
         this.enter = false;
@@ -19,7 +19,7 @@ class Keypad {
     }
 }
 
-class Monitor {
+export class Monitor {
     constructor(monitorStatus) {
         this.monitorStatus = monitorStatus;
         this.outputInformation = null;
@@ -27,7 +27,7 @@ class Monitor {
     }
 }
 
-class BillStorage {
+export class BillStorage {
     constructor(billStorageStatus) {
         this.billStorageStatus = billStorageStatus;
         this.billsDeliveryEngine = true;
@@ -36,7 +36,7 @@ class BillStorage {
     }
 }
 
-class BillDisburser {
+export class BillDisburser {
     constructor(billDisburserStatus) {
         this.billDisburserStatus = billDisburserStatus;
         this.disburserEngine = true;
@@ -44,7 +44,7 @@ class BillDisburser {
     }
 }
 
-class SystemDatabase {
+export class SystemDatabase {
     constructor(){
         this.systemAccount = [//a few fake accounts here
             {
@@ -78,7 +78,7 @@ class SystemDatabase {
     }
 }
 
-class SystemClock {
+export class SystemClock {
     constructor(t,currentHour, currentMinute, currentSecond, interruptCounter, timer) {
         this.t = t;
         this.currentTime = {
